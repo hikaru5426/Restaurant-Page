@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+img{
+    width:60%;
+    height:auto;
+}
+
 ul{
     list-style:none;
 }
@@ -16,6 +21,12 @@ button{
     font-size:inherit;
     padding:10px;
     border-radius:10px;
+    font-weight:700;
+}
+
+button:hover{
+    filter:brightness(0.8);
+    box-shadow: 0 0 5px rgb(150, 150, 150);
 }
 
 p,
