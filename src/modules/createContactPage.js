@@ -12,6 +12,7 @@ function createContactPage(){
     ownerTitle.textContent = "Owner";
     const ownerText = document.createElement("p");
     ownerText.innerHTML = "Patrick OLLIGAN<br>06 27 10 62 54<br>patrickOlligan@gmail.com";
+    ownerDiv.classList.add("centered");
     ownerDiv.append(ownerTitle, ownerText);
 
     const lawyerDiv = document.createElement("div");
@@ -19,8 +20,8 @@ function createContactPage(){
     lawyerTitle.textContent = "Lawyer";
     const lawyerText = document.createElement("p");
     lawyerText.innerHTML = "Jack OSTER<br>06 57 24 13 94<br>jackOster@gmail.com";
+    lawyerDiv.classList.add("centered");
     lawyerDiv.append(lawyerTitle, lawyerText);
-
 
     contentDiv.append(title, ownerDiv, lawyerDiv);
 }

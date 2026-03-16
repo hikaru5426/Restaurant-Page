@@ -10,7 +10,7 @@ function createHomePage() {
 
 
     const hours = document.createElement("div");
-    hours.classList.add("majorDiv");
+    hours.classList.add("homeMajorElement");
     hours.id = "hoursDiv";
 
     const titleHours = document.createElement("h2");
@@ -31,7 +31,7 @@ function createHomePage() {
     const locationText = document.createElement("p");
     locationText.textContent = "123 Forest Drive, Forestville, Maine";
     location.append(locationTitle, locationText);
-    location.classList.add("majorDiv");
+    location.classList.add("homeMajorElement");
 
     contentDiv.append(title, text, hours, location);
 }

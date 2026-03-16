@@ -13,6 +13,7 @@ function createMenuPage(){
 
 
     const beveragesDiv = document.createElement("div");
+    beveragesDiv.classList.add("centered");
     const beveragesTitle = document.createElement("h2");
     beveragesTitle.textContent = "Beverages";
 
@@ -27,7 +28,7 @@ function createMenuPage(){
     honeyTeaImage.src = honeyTea;
     honeyTeaImage.alt = "cup of tea and honey on a table";
     honeyTeaDiv.append(honeyTeaTitle, honeyTeaText, honeyTeaPrice, honeyTeaImage);
-    honeyTeaDiv.classList.add("majorDiv");
+    honeyTeaDiv.classList.add("menuDish");
 
     const mintTeaDiv = document.createElement("div");
     const mintTeaTitle = document.createElement("h3");
@@ -40,12 +41,13 @@ function createMenuPage(){
     mintTeaImage.src = mintTea;
     mintTeaImage.alt = "cup of mint tea on a table";
     mintTeaDiv.append(mintTeaTitle, mintTeaText, mintTeaPrice, mintTeaImage);
-    mintTeaDiv.classList.add("majorDiv");
+    mintTeaDiv.classList.add("menuDish");
 
     beveragesDiv.append(beveragesTitle, honeyTeaDiv, mintTeaDiv);
 
 
     const sideDiv = document.createElement("div");
+    sideDiv.classList.add("centered");
     const sideTitle = document.createElement("h2");
     sideTitle.textContent = "Side";
 
@@ -53,14 +55,14 @@ function createMenuPage(){
     const freshFruitTitle = document.createElement("h3");
     freshFruitTitle.textContent = "Fresh Fruit";
     const freshFruitText = document.createElement("p");
-    freshFruitText.textContent = "A small bowl of fresh fruit, whatever we find at the market for the day.";
+    freshFruitText.textContent = "A small bowl of fresh fruit from our local town, it will depends of what we find at the market for the day.";
     const freshFruitPrice = document.createElement("p");
     freshFruitPrice.textContent = "3$";
     const freshFruitImage = document.createElement("img");
     freshFruitImage.src = freshFruit;
     freshFruitImage.alt = "bowl of fresh fruits";
     freshFruitDiv.append(freshFruitTitle, freshFruitText, freshFruitPrice, freshFruitImage);
-    freshFruitDiv.classList.add("majorDiv");
+    freshFruitDiv.classList.add("menuDish");
 
     const toastAndJamDiv = document.createElement("div");
     const toastAndJamTitle = document.createElement("h3");
@@ -73,12 +75,13 @@ function createMenuPage(){
     toastAndJamImage.src = toastAndJam;
     toastAndJamImage.alt = "A slice of bread with jam";
     toastAndJamDiv.append(toastAndJamTitle, toastAndJamText, toastAndJamPrice, toastAndJamImage);
-    toastAndJamDiv.classList.add("majorDiv");
+    toastAndJamDiv.classList.add("menuDish");
 
     sideDiv.append(sideTitle, freshFruitDiv, toastAndJamDiv);
 
 
     const mainDiv = document.createElement("div");
+    mainDiv.classList.add("centered");
     const mainTitle = document.createElement("h2");
     mainTitle.textContent = "Main";
 
@@ -93,7 +96,7 @@ function createMenuPage(){
     pancakesImage.src = pancakes;
     pancakesImage.alt = "pancackes with malpe syrup";
     pancakesDiv.append(pancakesTitle, pancakesText, pancakesPrice, pancakesImage);
-    pancakesDiv.classList.add("majorDiv");
+    pancakesDiv.classList.add("menuDish");
 
     const frenchToastDiv = document.createElement("div");
     const frenchToastTitle = document.createElement("h3");
@@ -106,7 +109,7 @@ function createMenuPage(){
     frenchToastImage.src = frenchToast;
     frenchToastImage.alt = "Two french toast with fruits";
     frenchToastDiv.append(frenchToastTitle, frenchToastText, frenchToastPrice, frenchToastImage);
-    frenchToastDiv.classList.add("majorDiv");
+    frenchToastDiv.classList.add("menuDish");
 
     mainDiv.append(mainTitle, pancakesDiv, frenchToastDiv);
 
