@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('./fonts/AlexBrush-Regular.woff2') format('woff2'),
+        url('./fonts/AlexBrush-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 *{
     margin:0;
     padding:0;
@@ -17,8 +25,13 @@ html{
     font-size:40px;
 }
 
+body{
+    font-family:"Alex Brush", serif;
+}
+
 button{
     font-size:inherit;
+    font-family:inherit;
     padding:10px;
     border-radius:10px;
     font-weight:700;
@@ -84,12 +97,16 @@ header > nav{
     justify-content:center;
     width:100%;
     padding:60px 0 30px 0;
-    border:10px solid rgba(150, 150, 150, 0.8);
-    border-radius:50px;
+    border:20px solid;
+    border-image: url("./images/marble.jpg") 30 round;
 }
 
 .majorDiv > h2{
     position:absolute;
     top:0px;
     left:10px;
+}
+
+#content.reducedWidth{
+    margin:40vh 30vw 0;
 }

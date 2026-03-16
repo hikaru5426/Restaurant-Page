@@ -27,6 +27,7 @@ function createMenuPage(){
     honeyTeaImage.src = honeyTea;
     honeyTeaImage.alt = "cup of tea and honey on a table";
     honeyTeaDiv.append(honeyTeaTitle, honeyTeaText, honeyTeaPrice, honeyTeaImage);
+    honeyTeaDiv.classList.add("majorDiv");
 
     const mintTeaDiv = document.createElement("div");
     const mintTeaTitle = document.createElement("h3");
@@ -39,6 +40,7 @@ function createMenuPage(){
     mintTeaImage.src = mintTea;
     mintTeaImage.alt = "cup of mint tea on a table";
     mintTeaDiv.append(mintTeaTitle, mintTeaText, mintTeaPrice, mintTeaImage);
+    mintTeaDiv.classList.add("majorDiv");
 
     beveragesDiv.append(beveragesTitle, honeyTeaDiv, mintTeaDiv);
 
@@ -58,6 +60,7 @@ function createMenuPage(){
     freshFruitImage.src = freshFruit;
     freshFruitImage.alt = "bowl of fresh fruits";
     freshFruitDiv.append(freshFruitTitle, freshFruitText, freshFruitPrice, freshFruitImage);
+    freshFruitDiv.classList.add("majorDiv");
 
     const toastAndJamDiv = document.createElement("div");
     const toastAndJamTitle = document.createElement("h3");
@@ -70,6 +73,7 @@ function createMenuPage(){
     toastAndJamImage.src = toastAndJam;
     toastAndJamImage.alt = "A slice of bread with jam";
     toastAndJamDiv.append(toastAndJamTitle, toastAndJamText, toastAndJamPrice, toastAndJamImage);
+    toastAndJamDiv.classList.add("majorDiv");
 
     sideDiv.append(sideTitle, freshFruitDiv, toastAndJamDiv);
 
@@ -89,6 +93,7 @@ function createMenuPage(){
     pancakesImage.src = pancakes;
     pancakesImage.alt = "pancackes with malpe syrup";
     pancakesDiv.append(pancakesTitle, pancakesText, pancakesPrice, pancakesImage);
+    pancakesDiv.classList.add("majorDiv");
 
     const frenchToastDiv = document.createElement("div");
     const frenchToastTitle = document.createElement("h3");
@@ -101,6 +106,7 @@ function createMenuPage(){
     frenchToastImage.src = frenchToast;
     frenchToastImage.alt = "Two french toast with fruits";
     frenchToastDiv.append(frenchToastTitle, frenchToastText, frenchToastPrice, frenchToastImage);
+    frenchToastDiv.classList.add("majorDiv");
 
     mainDiv.append(mainTitle, pancakesDiv, frenchToastDiv);
 

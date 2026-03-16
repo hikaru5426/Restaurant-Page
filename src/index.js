@@ -13,6 +13,7 @@ const contentDiv = document.getElementById("content");
 
 function clearPage(){
     contentDiv.innerHTML = "";
+    contentDiv.classList.remove("reducedWidth");
 }
 
 nav.addEventListener("click", (e) => {

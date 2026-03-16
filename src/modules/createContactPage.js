@@ -2,6 +2,7 @@ export {createContactPage};
 
 function createContactPage(){
     const contentDiv = document.getElementById("content");
+    contentDiv.classList.add("reducedWidth");
     const title = document.createElement("h1");
     title.textContent = "Contact";
 
