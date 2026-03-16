@@ -1,13 +1,13 @@
 import "./style.css";
 import {createHomePage} from "./modules/createHomePage.js";
 import {createMenuPage} from "./modules/createMenuPage.js";
-
+import {createContactPage} from "./modules/createContactPage.js";
 createHomePage();
 const nav = document.querySelector("nav");
 
 const homeBtn = document.getElementById("home-btn");
 const menuBtn = document.getElementById("menu-btn");
-const aboutBtn = document.getElementById("about-btn");
+const contactBtn = document.getElementById("contact-btn");
 
 const contentDiv = document.getElementById("content");
 
@@ -22,8 +22,8 @@ nav.addEventListener("click", (e) => {
     } else if(e.target == menuBtn){
         clearPage();
         createMenuPage();
-    } else if(e.target == aboutBtn){
+    } else if(e.target == contactBtn){
         clearPage();
-        createAboutPage();
+        createContactPage();
     }
 })
